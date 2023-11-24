@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h6>{{tituloFormulario}}</h6>
+    <form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
+        <div class="form-group">
+          <label>Id</label>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            formControlName="Id"
+          />
+        </div>
+        <div class="form-group">
+          <label>Numero da Conta</label>
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            formControlName="numeroConta"
+          />
+        </div>
+        <div class="form-group">
+            <label>Tipo da Conta</label>
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              formControlName="tipoConta"
+            />
+          </div>
+          <div class="form-group">
+            <label>Saldo</label>
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              formControlName="saldo"
+            />
+          </div>
+          <div class="form-group">
+            <label>Data de Abertura</label>
+            <input
+              type="date"
+              class="form-control form-control-sm"
+              formControlName="dataAbertura"
+            />
+          </div>
+          <div class="form-group">
+            <label>clienteId</label>
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              formControlName="clienteId"
+            />
+          </div>
+          <div class="form-group">
+            <label>agenciaId</label>
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              formControlName="agenciaId"
+            />
+          </div>
+
+        <div class="container">
+          <div class="row">
+            <div>
+              <button type="submit" class="btn btn-sm btn-outline-secondary">
+                Salvar
+              </button>
+            </div>
+            <div class="pl-1">
+              <button type="button" class="btn btn-sm btn-light">Voltar</button>
+            </div>
+          </div>
+        </div>
+      </form>
+</body>
+</html>
