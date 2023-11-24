@@ -46,4 +46,9 @@ export class SeguroService {
       const url = `${this.apiUrl}/deletar/${seguroId}`;
       return this.http.delete(url, httpOptions);
   }
+
+  criar(seguro: Seguro): Observable<any> {
+    const url = `${this.apiUrl}/criar`;
+    return this.http.post<Seguro>(url, seguro, httpOptions);
+}
 }
