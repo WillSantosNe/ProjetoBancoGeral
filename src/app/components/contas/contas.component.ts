@@ -28,7 +28,7 @@ export class ContasComponent implements OnInit {
 
       clienteId : new FormControl(null),
       agenciaId : new FormControl(null),
-      })
+    })
   }
   enviarFormulario():void{
     const conta: Conta = this.formulario.value;
@@ -38,3 +38,4 @@ export class ContasComponent implements OnInit {
   }
 
 }
+

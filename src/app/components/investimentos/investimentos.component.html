@@ -1,1 +1,90 @@
-<p>investimentos works!</p>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h6>{{titulo}}</h6>
+    <form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
+        <div class="form-group">
+            <label>Id</label>
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              formControlName="id"
+            />
+        </div>
+        <div class="form-group">
+            <label>Valor Inicial</label>
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              formControlName="valorini"
+            />
+        </div>
+        <div class="form-group">
+            <label>Data de Investimento</label>
+            <input
+              type="date"
+              class="form-control form-control-sm"
+              formControlName="datainvest"
+            />
+        </div>
+        <div class="form-group">
+            <label>Rentabilidade</label>
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              formControlName="rentabilidade"
+            />
+        </div>
+        <div class="form-group">
+            <label>Data de Resgate</label>
+            <input
+              type="date"
+              class="form-control form-control-sm"
+              formControlName="dataresgate"
+            />
+        </div>
+        <div class="form-group">
+            <label>Taxa</label>
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              formControlName="taxa"
+            />
+        </div>
+        <div class="form-group">
+            <label>Tipo de Investimento</label>
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              formControlName="tipoinvestimento"
+            />
+        </div>
+        <div class="form-group">
+            <label>Conta Id</label>
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              formControlName="contaId"
+            />
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div>
+                    <button type="submit" class="btn btn-sm btn-outline-secondary">
+                        Salvar
+                    </button>
+                </div>
+                <div class="pl-1">
+                    <button type="button" class="btn btn-sm btn-light">Voltar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
