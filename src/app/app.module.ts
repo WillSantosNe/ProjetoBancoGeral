@@ -14,7 +14,7 @@ import { ContasService } from './contas.service';
 import { ContasComponent } from './components/contas/contas.component';
 
 import { SeguroService } from './seguros.service';
-import { SegurosComponent } from './components/seguros/seguros.component';
+import { SeguroComponent } from './components/seguros/seguros.component';
 
 import { TransferenciasService } from './transferencias.service';
 import { TransferenciasComponent } from './components/transferencias/transferencias.component';
