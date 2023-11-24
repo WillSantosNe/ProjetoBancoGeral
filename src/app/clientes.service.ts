@@ -16,8 +16,8 @@ export class ClientesService{
   baseUrl = 'http://localhost:5000/cliente'; //Rota padrao
   constructor(private http: HttpClient) { } 
 
-  newRoom(ICliente: ICliente): Observable<any> {
-    const url = `${this.baseUrl}/add-cliente`;
+  cadastrar(ICliente: ICliente): Observable<any> {
+    const url = `${this.baseUrl}/cadastrar`;
     return this.http.post<ICliente>(url, ICliente, httpOptions);
   }
   
