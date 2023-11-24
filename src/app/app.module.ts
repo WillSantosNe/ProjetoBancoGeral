@@ -19,6 +19,16 @@ import { SegurosComponent } from './components/seguros/seguros.component';
 import { TransferenciasService } from './transferencias.service';
 import { TransferenciasComponent } from './components/transferencias/transferencias.component';
 
+import { MovimentacaoService } from './movimentacaos.service';
+import { MovimentacaosComponent } from './components/movimentacaos/movimentacaos.component';
+
+import { EmprestimosService } from './emprestimos.service';
+import { EmprestimosComponent } from './components/emprestimos/emprestimos.component';
+
+import { InvestimentosService } from './investimentos.service';
+import { InvestimentosComponent } from './components/investimentos/investimentos.component';
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -40,6 +50,5 @@ import { TransferenciasComponent } from './components/transferencias/transferenc
 })
 
 export class AppModule { }
-import { EmprestimosService } from './emprestimos.service';
-import { InvestimentosService } from './investimentos.service';
+
 
