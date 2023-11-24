@@ -1,1 +1,89 @@
-<p>cartaos works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <h6>{{titulo}}</h6>
+  <form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
+    <div class="form-group">
+      <label for="id">Id</label>
+      <input
+        type="text"
+        class="form-control form-control-sm"
+        formControlName="id"
+        id="id"
+      />
+    </div>
+    <div class="form-group">
+      <label for="numcartao">Número do Cartão</label>
+      <input
+        type="text"
+        class="form-control form-control-sm"
+        formControlName="numcartao"
+        id="numcartao"
+      />
+    </div>
+    <div class="form-group">
+      <label for="dataval">Data de Validade</label>
+      <input
+        type="date"
+        class="form-control form-control-sm"
+        formControlName="dataval"
+        id="dataval"
+      />
+    </div>
+    <div class="form-group">
+      <label for="codigoseg">Código de Segurança</label>
+      <input
+        type="text"
+        class="form-control form-control-sm"
+        formControlName="codigoseg"
+        id="codigoseg"
+      />
+    </div>
+    <div class="form-group">
+      <label for="limite">Limite</label>
+      <input
+        type="text"
+        class="form-control form-control-sm"
+        formControlName="limite"
+        id="limite"
+      />
+    </div>
+    <div class="form-group">
+      <label for="bloqueado">Bloqueado</label>
+      <input
+        type="checkbox"
+        class="form-check-input"
+        formControlName="bloqueado"
+        id="bloqueado"
+      />
+    </div>
+    <div class="form-group">
+      <label for="contaId">Id da Conta</label>
+      <input
+        type="text"
+        class="form-control form-control-sm"
+        formControlName="contaId"
+        id="contaId"
+      />
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div>
+          <button type="submit" class="btn btn-sm btn-outline-secondary">
+            Salvar
+          </button>
+        </div>
+        <div class="pl-1">
+          <button type="button" class="btn btn-sm btn-light">Voltar</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
