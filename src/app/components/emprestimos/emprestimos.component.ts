@@ -9,7 +9,7 @@ import { EmprestimosService } from '../../emprestimos.service';
   imports: [CommonModule],
   templateUrl: './emprestimos.component.html',
   styleUrl: './emprestimos.component.css'
-  
+
 })
 export class EmprestimosComponent implements OnInit {
   formulario : any;
@@ -18,7 +18,7 @@ export class EmprestimosComponent implements OnInit {
   constructor(private EmprestimoService: EmprestimoService){ }
 
   ngOnInit(): void {
-    this.tituloFormulario = 'Nova Conta';
+    this.tituloFormulario = 'Novo Emprestimo';
     this.formulario = new FormGroup({
       id : new FormControl(null),
       numeroConta: new FormControl(null),

@@ -1,6 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Investimento } from '../../Investimento';
+import { FormControl, FormGroup } from '@angular/forms';
+import { InvestimentoService } from '../../investimentos.service';
+
+
 
 @Component({
   selector: 'app-investimentos',
@@ -13,7 +17,7 @@ export class InvestimentosComponent implements OnInit{
   formulario : any;
   titulo : string = '';
 
-  constructor(private investimentoService: InvestimentosService){ }
+  constructor(private investimentoService: InvestimentoService){ }
 
   ngOnInit(): void{
     this.titulo = 'Novo Investimento';
