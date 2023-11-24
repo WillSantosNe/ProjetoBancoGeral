@@ -11,14 +11,14 @@ export enum TipoConta {
 }
 
 export interface Conta {
-    id: number;
-    numeroConta: string;
-    tipoConta: TipoConta;
-    saldo: number;
-    dataAbertura: Date;
+    id?: number;
+    numeroConta?: string;
+    tipoConta?: TipoConta;
+    saldo?: number;
+    dataAbertura?: Date;
 
-    clienteId: number;
-    agenciaId: number;
+    clienteId?: number;
+    agenciaId?: number;
 
     // cliente?: Cliente;
 }

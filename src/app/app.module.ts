@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { ContasService } from './contas.service';
 import { ContasComponent } from './components/contas/contas.component';
 
+import { SeguroService } from './seguros.service';
+import { SegurosComponent } from './components/seguros/seguros.component';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -17,7 +20,8 @@ import { ContasComponent } from './components/contas/contas.component';
   ],
   providers: [
     HttpClientModule,
-    ContasService
+    ContasService,
+    SeguroService
   ]
 })
 export class AppModule { }
