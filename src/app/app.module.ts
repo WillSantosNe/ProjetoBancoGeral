@@ -10,6 +10,7 @@ import { ContasComponent } from './components/contas/contas.component';
 import { SeguroService } from './seguros.service';
 import { SegurosComponent } from './components/seguros/seguros.component';
 
+import {}
 @NgModule({
   declarations: [
     AppComponent
